@@ -57,8 +57,9 @@ function PostQuestion(props) {
             const temp = [...QNImages]
             temp[index - 1] = temp[index]
             temp[index] = QNImages[index - 1]
-
+            console.log(temp)
             setQNImages(temp)
+            props.onQuestionIMGChange(temp)
         }
     }
 
@@ -71,9 +72,10 @@ function PostQuestion(props) {
             console.log(temp)
             setQNImages(temp)
             console.log(QNImages)
+            props.onQuestionIMGChange(temp)
         }
     }
-
+    
     return (
         <div>
             {QNImages.length == 0 ?

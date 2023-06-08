@@ -59,6 +59,7 @@ function PostAnswer(props) {
             temp[index] = ANSImages[index - 1]
 
             setANSImages(temp)
+            props.onAnswerIMGChange(temp)
         }
     }
 
@@ -71,6 +72,7 @@ function PostAnswer(props) {
             console.log(temp)
             setANSImages(temp)
             console.log(ANSImages)
+            props.onAnswerIMGChange(temp)
         }
     }
 
