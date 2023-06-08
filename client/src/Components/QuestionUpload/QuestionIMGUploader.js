@@ -63,7 +63,7 @@ function QuestionIMGUploader(props) {
                         src={QNImage.OriginalIMGData} 
                         style={{ height: 400, width: "100%" }}
                         // Cropper.js options
-                        initialAspectRatio={210/297} //image aspect ratio to decide later
+                        autoCropArea={1} //set the cropbox size initially to the image size
                         dragMode='move'
                         cropBoxMovable={false}
                         guides={false}
